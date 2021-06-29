@@ -3,7 +3,12 @@
 //
 
 #import "GeneratedPluginRegistrant.h"
+
+#if __has_include(<wifi/WifiPlugin.h>)
 #import <wifi/WifiPlugin.h>
+#else
+@import wifi;
+#endif
 
 @implementation GeneratedPluginRegistrant
 
